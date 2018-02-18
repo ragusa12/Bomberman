@@ -1,0 +1,31 @@
+# depslib dependency file v1.0
+1515770079 source:/home/ragusa/Documents/cpp/BomberMan/main.cpp
+	<SFML/Graphics.hpp>
+	"Game.h"
+
+1516912555 source:/home/ragusa/Documents/cpp/BomberMan/src/Game.cpp
+	"Game.h"
+	<iostream>
+
+1515771090 /home/ragusa/Documents/cpp/BomberMan/include/Game.h
+	<SFML/Graphics.hpp>
+	"Player.h"
+	<vector>
+
+1516913485 source:/home/ragusa/Documents/cpp/BomberMan/src/AnimatedSprite.cpp
+	"AnimatedSprite.h"
+	<iostream>
+
+1516911077 /home/ragusa/Documents/cpp/BomberMan/include/AnimatedSprite.h
+	<string>
+	<vector>
+	<SFML/Graphics.hpp>
+
+1516911535 source:/home/ragusa/Documents/cpp/BomberMan/src/Player.cpp
+	"Player.h"
+
+1515770535 /home/ragusa/Documents/cpp/BomberMan/include/Player.h
+	<SFML/System/Vector2.hpp>
+	<string>
+	"AnimatedSprite.h"
+
