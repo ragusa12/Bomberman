@@ -29,3 +29,40 @@
 	<string>
 	"AnimatedSprite.h"
 
+1515770079 source:/home/ragusa/Documents/cpp/Bomberman/main.cpp
+	<SFML/Graphics.hpp>
+	"Game.h"
+
+1515771090 /home/ragusa/Documents/cpp/Bomberman/include/Game.h
+	<SFML/Graphics.hpp>
+	"Player.h"
+	<vector>
+
+1518977288 /home/ragusa/Documents/cpp/Bomberman/include/Player.h
+	<SFML/System/Vector2.hpp>
+	<string>
+	"SpriteController.h"
+	"AnimatedSprite.h"
+
+1518976094 /home/ragusa/Documents/cpp/Bomberman/include/AnimatedSprite.h
+	<string>
+	<vector>
+	<SFML/Graphics.hpp>
+
+1518977545 source:/home/ragusa/Documents/cpp/Bomberman/src/Game.cpp
+	"Game.h"
+	<iostream>
+
+1518976141 source:/home/ragusa/Documents/cpp/Bomberman/src/Player.cpp
+	"Player.h"
+
+1518976086 source:/home/ragusa/Documents/cpp/Bomberman/src/AnimatedSprite.cpp
+	"AnimatedSprite.h"
+	<iostream>
+
+1518977741 /home/ragusa/Documents/cpp/Bomberman/include/SpriteController.h
+	"AnimatedSprite.h"
+
+1518977148 source:/home/ragusa/Documents/cpp/Bomberman/src/SpriteController.cpp
+	"SpriteController.h"
+

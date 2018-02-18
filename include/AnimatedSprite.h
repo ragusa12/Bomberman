@@ -13,7 +13,7 @@ public:
 
     void setPosition( sf::Vector2f pos );
 
-    sf::Sprite* draw();
+    void draw();
 
     int fps;
 

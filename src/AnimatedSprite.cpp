@@ -11,8 +11,6 @@ window(_window), w(_w), h(_h), fps(_fps) {
 
     totalFrames = img.getSize().x / w;
 
-    std::cout << "Total Frames: " << totalFrames << std::endl;
-
     if ( !texture.loadFromImage( img ) )
         std::cerr << "Error loading texture: " << src << std::endl;
 
@@ -25,7 +23,7 @@ void AnimatedSprite::setPosition( sf::Vector2f pos ) {
     sprite.setPosition(pos);
 }
 
-sf::Sprite* AnimatedSprite::draw() {
+void AnimatedSprite::draw() {
 
     int deltaFrame = (int) ((double) animationClock->getElapsedTime().asSeconds() / ((double)1/fps));
     if ( deltaFrame > 0 ) {

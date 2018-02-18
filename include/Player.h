@@ -5,22 +5,23 @@
 
 #include <string>
 
+#include "SpriteController.h"
 #include "AnimatedSprite.h"
 
 class Player
 {
 public:
-    Player();
+    Player( std::vector<AnimatedSprite> _anim_sprs );
 
     void setPosition( float _x, float _y );
 
-    void setAnimatedSprite( std::string src, sf::RenderWindow* _window);
-
-    sf::Sprite* draw();
+    void draw();
 
 private:
     sf::Vector2f* position = nullptr;
-    AnimatedSprite* animspr = nullptr;
+
+    SpriteController* sprController = nullptr;
+
 };
 
 #endif // PLAYER_H

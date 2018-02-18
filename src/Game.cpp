@@ -18,9 +18,11 @@ Game::Game( sf::RenderWindow* _window ) :
 
 void Game::game_active() {
 
-    Player player;
+    std::vector<AnimatedSprite> player_sprs;
+    player_sprs.push_back( *(new AnimatedSprite(window, "test.png", 50, 50, 1)) );
+
+    Player player( player_sprs );
     player.setPosition( 100, 100 );
-    player.setAnimatedSprite("test.png", window);
 
     while ( window->isOpen() ) {
         sf::Event e;

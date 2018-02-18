@@ -1,7 +1,9 @@
 #include "Player.h"
 
-Player::Player() {
+Player::Player( std::vector<AnimatedSprite> _anim_sprs ) {
     position = new sf::Vector2f(0, 0);
+
+    sprController = new SpriteController(_anim_sprs);
 }
 
 void Player::setPosition( float _x, float _y ) {
@@ -9,11 +11,7 @@ void Player::setPosition( float _x, float _y ) {
     position->y = _y;
 }
 
-void Player::setAnimatedSprite( std::string src, sf::RenderWindow* _window ) {
-    animspr = new AnimatedSprite( _window, src, 50, 50, 5);
-}
-
-sf::Sprite* Player::draw() {
-    animspr->setPosition( *position );
-    return animspr->draw();
+void Player::draw() {
+    sprController->setPositionCurrent( *position );
+    sprController->drawCurrent();
 }
